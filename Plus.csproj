@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <StartupObject>Plus.Program</StartupObject>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="AStar">
+            <HintPath>Resources\libs\AStar.dll</HintPath>
+        </Reference>
+        <Reference Include="HabboEncryption">
+            <HintPath>Resources\libs\HabboEncryption.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DotNetty.Buffers" Version="0.7.0" />
+        <PackageReference Include="DotNetty.Codecs" Version="0.7.0" />
+        <PackageReference Include="DotNetty.Codecs.Http" Version="0.7.0" />
+        <PackageReference Include="DotNetty.Common" Version="0.7.0" />
+        <PackageReference Include="DotNetty.Handlers" Version="0.7.0" />
+        <PackageReference Include="DotNetty.Transport" Version="0.7.0" />
+        <PackageReference Include="log4net" Version="2.0.12" />
+        <PackageReference Include="morelinq" Version="3.3.2" />
+        <PackageReference Include="MySql.Data" Version="8.0.26" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Config\config.ini">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Config\figuredata.xml">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <Content Include="log4net.config">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="HabboHotel\Roleplay\Commands\Hospital\" />
+    </ItemGroup>
+
+</Project>

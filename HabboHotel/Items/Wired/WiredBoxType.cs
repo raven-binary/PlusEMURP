@@ -1,0 +1,66 @@
+﻿namespace Plus.HabboHotel.Items.Wired
+{
+    public enum WiredBoxType
+    {
+        None,
+        TriggerRoomEnter,
+        TriggerUserSays,
+        TriggerRepeat,
+        TriggerStateChanges,
+        TriggerWalkOnFurni,
+        TriggerWalkOffFurni,
+        TriggerGameStarts,
+        TriggerGameEnds,
+        TriggerUserFurniCollision,
+        TriggerUserSaysCommand,
+
+        EffectShowMessage,
+        EffectTeleportToFurni,
+        EffectToggleFurniState,
+        EffectKickUser,
+        EffectMatchPosition,
+        EffectMoveAndRotate,
+        EffectMoveFurniToNearestUser,
+        EffectMoveFurniFromNearestUser,
+        EffectMuteTriggerer,
+        EffectGiveReward,
+        EffectExecuteWiredStacks,
+
+        EffectTeleportBotToFurniBox,
+        EffectBotChangesClothesBox,
+        EffectBotMovesToFurniBox,
+        EffectBotCommunicatesToAllBox,
+        EffectBotCommunicatesToUserBox,
+        EffectBotFollowsUserBox,
+        EffectBotGivesHanditemBox,
+
+        EffectAddActorToTeam,
+        EffectRemoveActorFromTeam,
+        EffectSetRollerSpeed,
+        EffectRegenerateMaps,
+        EffectGiveUserBadge,
+
+        ConditionFurniHasUsers,
+        ConditionFurniHasFurni,
+        ConditionTriggererOnFurni,
+        ConditionIsGroupMember,
+        ConditionIsNotGroupMember,
+        ConditionTriggererNotOnFurni,
+        ConditionFurniHasNoUsers,
+        ConditionIsWearingBadge,
+        ConditionIsWearingFx,
+        ConditionIsNotWearingBadge,
+        ConditionIsNotWearingFx,
+        ConditionMatchStateAndPosition,
+        ConditionDontMatchStateAndPosition,
+        ConditionUserCountInRoom,
+        ConditionUserCountDoesntInRoom,
+        ConditionFurniTypeMatches,
+        ConditionFurniTypeDoesntMatch,
+        ConditionFurniHasNoFurni,
+        ConditionActorHasHandItemBox,
+        ConditionActorIsInTeamBox,
+
+        AddonRandomEffect
+    }
+}
