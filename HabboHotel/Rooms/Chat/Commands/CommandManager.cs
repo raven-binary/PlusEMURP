@@ -12,6 +12,7 @@ using Plus.HabboHotel.Rooms.Chat.Commands.Moderator.Fun;
 using Plus.HabboHotel.Rooms.Chat.Commands.User;
 using Plus.HabboHotel.Rooms.Chat.Commands.User.Combat;
 using Plus.HabboHotel.Rooms.Chat.Commands.User.Fun;
+using Plus.HabboHotel.Rooms.Chat.Commands.Police;
 
 namespace Plus.HabboHotel.Rooms.Chat.Commands
 {
