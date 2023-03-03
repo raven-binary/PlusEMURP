@@ -31,7 +31,7 @@ namespace Plus.HabboHotel.Rooms.Chat.Commands.Police
             RoomUser targetUser = session.GetHabbo().CurrentRoom.GetRoomUserManager().GetRoomUserByHabbo(@params[1]);
             if (targetUser != null && targetClient != null)
 		room.SendPacket(new ChatComposer(session.GetHabbo().Username, "Fires a stungun at " + targetClient.GetHabbo().Username, 0, targetUser.LastBubble));
-		targetUser.ApplyEffect(enableId);
+		targetUser.ApplyEffect(53);
 		targetUser.Frozen = true;
 		targetClient.SendWhisper(session.GetHabbo().Username + " has stunned you.!");
 
