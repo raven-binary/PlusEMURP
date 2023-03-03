@@ -196,6 +196,7 @@ namespace Plus.HabboHotel.Rooms.Chat.Commands
             Register("mip", new MipCommand());
             Register("ipban", new IpBanCommand());
             Register("finger", new MiddleFingerCommand());
+	    Register("stun", new Stun());
 
             Register("ui", new UserInfoCommand());
             Register("userinfo", new UserInfoCommand());
